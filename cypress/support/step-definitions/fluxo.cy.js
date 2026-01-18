@@ -7,7 +7,7 @@ Given('que o usuario acessa o portal CoffeeCart', () =>{
     cy.visit('/')
 });
  
-And('que adiciona três ou mais cafés diferentes ao carrinho aceitando promoceos', () =>{
+And('que adiciona três ou mais cafés diferentes ao carrinho aceitando promocoes', () =>{
     CardapioPage.EscolherCafesEAceitarPromo()
 })
 
