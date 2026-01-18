@@ -29,9 +29,8 @@ class Carrinho {
                 cy.log('A lista de memória está vazia. Nada para deletar.');
                 return;
             }
-            cy.get('[data-test="checkout"]').trigger('mouseover');
-
-            cy.get('button[aria-label^="Remove one"]').should('have.length.greaterThan', 0) .then(($botoes) => {
+            cy.get('[data-test="checkout"]').should('be.visible')
+            cy.get('button[aria-label^="Remove one"]').should('be.visible') .then(($botoes) => {
                 const totalBotoes = $botoes.length;
                 const indiceSorteado = Math.floor(Math.random() * totalBotoes);
                   
@@ -49,7 +48,7 @@ class Carrinho {
 
                 cy.log(`Removendo: "${nomeCafeRemovido}" (Botão ${indiceSorteado + 1} de ${totalBotoes})`);
 
-                cy.wrap(botaoAlvo).click({force: true}); 
+                cy.wrap(botaoAlvo).realHover().click(); 
                 cy.get('[data-test="checkout"]').trigger('mouseover');
               });
         });

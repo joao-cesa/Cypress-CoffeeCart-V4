@@ -8,7 +8,7 @@ Given('que o usuario acessa o portal CoffeeCart', () =>{
 });
  
 And('que adiciona três ou mais cafés diferentes ao carrinho aceitando promocoes', () =>{
-    CardapioPage.EscolherCafesEAceitarPromo()
+    CardapioPage.escolherCafesEAceitarPromo()
 })
 
 And('que deleta um item do carrinho', () =>{
