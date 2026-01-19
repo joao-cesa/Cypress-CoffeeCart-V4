@@ -1,5 +1,5 @@
-const campoNome = '[name="name"]'
-const campoEmail = '[name="email"]'
+const campoNome = '[id="name"]'
+const campoEmail = '[id="email"]'
 const checkboxMensagem = '[id="promotion"]'
 const botaoSubmit = '[id="submit-payment"]'
 const mensagemSucesso = '//*[contains(text(), "Thanks for your purchase")]'

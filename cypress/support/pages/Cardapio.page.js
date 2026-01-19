@@ -22,8 +22,8 @@ const listaDeCafes = [
 
 const cafesEscolhidos = Cypress._.sampleSize(listaDeCafes, 3);
 
-const validarModel = '[class="promo"]'
-const aceitarPromo = '[class="yes"]'
+const validarModel = '//div[@class="promo"]'
+const aceitarPromo = '//button[@class="yes"]'
 
 let listaValidacao = [];
 
@@ -53,8 +53,8 @@ class Cardapio {
     }
 
     aceitarPromocao() {
-        cy.get(validarModel).should('be.visible');
-        cy.get(aceitarPromo).should('be.visible').click();
+        cy.xpath(validarModel).should('be.visible');
+        cy.xpath(aceitarPromo).should('be.visible').click();
         listaValidacao.push({
             nome: '(Discounted) Mocha', 
             preco: '$4.00'
