@@ -1,4 +1,4 @@
-# ☕ CoffeeCart Automation (Legacy Flow)
+# ☕ CoffeeCart Automation (Legado)
 
 > Automação E2E focada na validação via Interface de Preview (Mini-Cart).
 
