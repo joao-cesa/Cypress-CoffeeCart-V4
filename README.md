@@ -63,7 +63,7 @@ Tem algumas maneiras de rodar o teste.
     ```
 2.  Selecione a opção **"E2E Testing"**.
 3.  Escolha o navegador de sua preferência (Chrome,Electron,Edge...).
-4.  Na lista de testes (Specs), clique em **`CoffeeCart.feature`**.
+4.  Na lista de testes (Specs), clique em **`Comprar.feature`**.
 ---
 ### Terminal 
 1. Abra o terminal e digite:
